@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    min-height: 100vh;
+    background-color: rgb(16, 92, 95);
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    background-color: rgb(29, 158, 158);
+    height: 400px;
+    width: 400px;
+}
+
+article{
+    text-align: center;
+    padding: 10px;
+    max-width: 100%;
+    height: auto;
+}
+.counterData{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+h1{
+    width: 100%;
+    padding: 10px;
+    font-size: 2.1em;
+    font-weight: 800;
+}
+
+button{
+    width:90px;
+    padding: 5px;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 1em
+}
+.minus:hover span, .plus:hover span{
+    display: none;
+}
+
+.minus:hover::before{
+    content: "-";
+}
+.plus:hover::before{
+    content: "+";
+}
+#number{
+    display: flex;
+    width: 50px;
+    height: 50px;
+    margin-left: 5px;
+    margin-right: 5px;
+    text-align: center;
+    justify-content: center;
+    place-items: center;
+    background-color: blue;
+    color: white;
+    border-radius: 50%;
+    font-size: 1.5em;
+}
+
+.resetBtn{
+    background-color: orange;
+    padding: 5px;
+    margin: 40px;
+    font-size: 1.7em;
+}
+
+.resetBtn:hover span{
+    display: none;
+}
+
+.resetBtn:hover:before{
+    content: "0";
+}
